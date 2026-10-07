@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="CityDrive — an original unofficial browser driving demo.">
+<meta name="theme-color" content="#050608">
 <title>CityDrive — Own the City</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,29 +12,49 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
 <header class="topbar">
-<a class="brand" href="index.html" aria-label="CityDrive home"><span class="brand-mark">CD</span><span>CityDrive</span></a>
-<nav aria-label="Primary navigation"><a href="#game">Play</a><a href="#features">Features</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+  <a class="brand" href="index.html" aria-label="CityDrive home"><span class="brand-mark">CD</span><span>City<span>Drive</span></span></a>
+  <nav aria-label="Primary navigation"><a class="active" href="#game">Play</a><a href="#features">Features</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+  <a class="top-cta" href="#game">START DRIVE <span>↗</span></a>
 </header>
+
 <main>
 <section class="hero">
-<div class="hero-copy">
-<p class="eyebrow">UNOFFICIAL ORIGINAL BROWSER DEMO</p>
-<h1>Own the city.<br><span>Make your move.</span></h1>
-<p class="lede">Jump into a lightweight neon-night driving experience that runs directly in your browser.</p>
-<div class="actions"><a class="button primary" href="#game">Play Demo</a><a class="button ghost" href="#features">Explore</a></div>
-<p class="notice">CityDrive is an original fan-style demo and is not affiliated with Rockstar Games or Grand Theft Auto.</p>
-</div>
-<div class="city-art" aria-hidden="true"><div class="moon"></div><div class="skyline"></div><div class="road"><div class="lane"></div></div><div class="hero-car"></div></div>
+  <div class="hero-copy">
+    <div class="status-pill"><i></i> BROWSER DEMO <span>•</span> ONLINE</div>
+    <p class="eyebrow">NIGHT CITY / OPEN ROAD</p>
+    <h1>Own the city.<br><em>Make your move.</em></h1>
+    <p class="lede">A fast, cinematic driving experience built for the browser. No install. No waiting. Just hit the road.</p>
+    <div class="actions"><a class="button primary" href="#game"><span class="play-icon">▶</span> Play Demo</a><a class="button ghost" href="#features">Explore Experience <span>↓</span></a></div>
+    <div class="micro-stats"><div><strong>60</strong><span>FPS TARGET</span></div><div><strong>0</strong><span>INSTALLS</span></div><div><strong>100%</strong><span>WEB BASED</span></div></div>
+    <p class="notice">CityDrive is an original fan-style demo and is not affiliated with Rockstar Games or Grand Theft Auto.</p>
+  </div>
+  <div class="city-art" aria-hidden="true">
+    <div class="art-label"><span>CD // 01</span><span>NIGHT RUN</span></div>
+    <div class="moon"></div><div class="stars"></div><div class="skyline"></div>
+    <div class="road"><div class="lane"></div><div class="road-glow"></div></div>
+    <div class="hero-car"><div class="car-window"></div><div class="car-light"></div></div>
+    <div class="speed-lines"></div>
+  </div>
 </section>
+
 <div class="ad-slot" aria-label="Advertisement"><span>ADVERTISEMENT</span><div>Ad space — replace this area with your approved ad provider code.</div></div>
+
 <section id="game" class="game-section">
-<div class="section-head"><div><p class="eyebrow">CITYDRIVE DEMO</p><h2>Take the wheel</h2></div><p class="hint">WASD / Arrow Keys · Space = brake</p></div>
-<div class="game-shell"><canvas id="gameCanvas" width="960" height="540" aria-label="CityDrive driving game"></canvas><div class="touch-controls" aria-label="Touch controls"><button data-key="ArrowLeft" aria-label="Turn left">◀</button><button data-key="ArrowUp" aria-label="Accelerate">▲</button><button data-key="ArrowDown" aria-label="Brake">▼</button><button data-key="ArrowRight" aria-label="Turn right">▶</button></div></div>
+  <div class="section-head"><div><p class="eyebrow">01 / DRIVE</p><h2>Take the wheel<span>.</span></h2></div><div class="control-chip">WASD / ARROWS <b>·</b> SPACE = BRAKE</div></div>
+  <div class="game-shell"><div class="game-topline"><span><i></i> LIVE DEMO</span><span>CITYDRIVE ENGINE</span></div><canvas id="gameCanvas" width="960" height="540" aria-label="CityDrive driving game"></canvas><div class="touch-controls" aria-label="Touch controls"><button data-key="ArrowLeft" aria-label="Turn left">◀</button><button data-key="ArrowUp" aria-label="Accelerate">▲</button><button data-key="ArrowDown" aria-label="Brake">▼</button><button data-key="ArrowRight" aria-label="Turn right">▶</button></div></div>
 </section>
-<section id="features" class="features"><article><b>01</b><h3>Instant play</h3><p>No install and no heavy framework. Load the page and drive.</p></article><article><b>02</b><h3>Responsive</h3><p>Desktop keyboard controls plus touch controls for mobile screens.</p></article><article><b>03</b><h3>Built for the web</h3><p>Static files are ready for GitHub Pages and other static hosts.</p></article></section>
+
+<section id="features" class="features">
+  <div class="feature-intro"><p class="eyebrow">02 / EXPERIENCE</p><h2>Built to feel<br><em>fast.</em></h2><p>Minimal interface, cinematic atmosphere and controls that get out of your way.</p></div>
+  <article><b>01</b><div class="feature-icon">↯</div><h3>Instant play</h3><p>No install and no heavy framework. Load the page and drive.</p><span>READY IN SECONDS</span></article>
+  <article><b>02</b><div class="feature-icon">⌁</div><h3>Responsive</h3><p>Desktop keyboard controls plus touch controls for mobile screens.</p><span>DESKTOP + MOBILE</span></article>
+  <article><b>03</b><div class="feature-icon">◈</div><h3>Web native</h3><p>Static files are ready for GitHub Pages and other static hosts.</p><span>STATIC / FAST</span></article>
+</section>
 </main>
-<footer><span>© 2026 CityDrive</span><span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span></footer>
+
+<footer><span>© 2026 CityDrive <i>—</i> Original browser demo</span><span><a href="privacy.html">Privacy</a><b>·</b><a href="terms.html">Terms</a></span></footer>
 <script src="app.js"></script>
 </body>
 </html>
